@@ -7,6 +7,7 @@ import genreRoutes from "./routes/genre.routes";
 import { checkJwtMiddleware } from "./middleware/checkJwt.middleware";
 import errorHandler from "./middleware/error.middleware";
 import cors from "cors";
+import { Request, Response } from "express";
 
 const app = express();
 
@@ -18,6 +19,10 @@ app.use(morgan("tiny"));
 app.use("/user", userRoutes);
 app.use("/movies", moviesRoutes);
 app.use("/genre", checkJwtMiddleware, genreRoutes);
+
+app.get("/", (req: Request, res: Response): void => {
+  res.status(200).json({ message: "This is working bro!" });
+});
 
 app.use(errorHandler);
 
