@@ -18,7 +18,7 @@ app.use(morgan("tiny"));
 
 app.use("/user", userRoutes);
 app.use("/movies", moviesRoutes);
-app.use("/genre", checkJwtMiddleware, genreRoutes);
+app.use("/genre", genreRoutes);
 
 app.get("/", (req: Request, res: Response): void => {
   res.status(200).json({ message: "This is working bro!" });
