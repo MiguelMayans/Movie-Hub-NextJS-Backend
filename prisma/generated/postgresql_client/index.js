@@ -151,7 +151,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\User\\OneDrive\\Proyectos\\Assembler\\Backend\\Movie-Hub\\Server\\prisma\\generated\\postgresql_client",
+      "value": "C:\\Users\\User\\OneDrive\\Proyectos\\Assembler\\Advance\\MovieHubNext-BackEnd\\prisma\\generated\\postgresql_client",
       "fromEnvVar": null
     },
     "config": {
@@ -178,6 +178,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
@@ -187,7 +188,8 @@ const config = {
     }
   },
   "inlineSchema": "Ly8gVGhpcyBpcyB5b3VyIFByaXNtYSBzY2hlbWEgZmlsZSwNCi8vIGxlYXJuIG1vcmUgYWJvdXQgaXQgaW4gdGhlIGRvY3M6IGh0dHBzOi8vcHJpcy5seS9kL3ByaXNtYS1zY2hlbWENCg0KZ2VuZXJhdG9yIGNsaWVudCB7DQogICAgcHJvdmlkZXIgPSAicHJpc21hLWNsaWVudC1qcyINCiAgICBvdXRwdXQgICA9ICIuL2dlbmVyYXRlZC9wb3N0Z3Jlc3FsX2NsaWVudCINCn0NCg0KZGF0YXNvdXJjZSBkYiB7DQogICAgcHJvdmlkZXIgPSAicG9zdGdyZXNxbCINCiAgICB1cmwgICAgICA9IGVudigiREFUQUJBU0VfVVJMIikNCn0NCg0KbW9kZWwgVXNlciB7DQogICAgaWQgICAgICAgIEludCAgICAgIEBpZCBAZGVmYXVsdChhdXRvaW5jcmVtZW50KCkpDQogICAgbmFtZSAgICAgIFN0cmluZw0KICAgIGVtYWlsICAgICBTdHJpbmcgICBAdW5pcXVlDQogICAgY3JlYXRlZEF0IERhdGVUaW1lIEBkZWZhdWx0KG5vdygpKQ0KICAgIHVwZGF0ZWRBdCBEYXRlVGltZSBAdXBkYXRlZEF0DQogICAgbW92aWVzICAgIE1vdmllc1tdDQp9DQoNCm1vZGVsIE1vdmllcyB7DQogICAgaWQgICAgICAgICAgSW50ICAgICAgICAgICAgIEBpZCBAZGVmYXVsdChhdXRvaW5jcmVtZW50KCkpDQogICAgbmFtZSAgICAgICAgU3RyaW5nDQogICAgc2NvcmUgICAgICAgU3RyaW5nDQogICAgcG9zdGVySW1hZ2UgU3RyaW5nDQogICAgY3JlYXRlZEF0ICAgRGF0ZVRpbWUgICAgICAgIEBkZWZhdWx0KG5vdygpKQ0KICAgIHVwZGF0ZWRBdCAgIERhdGVUaW1lICAgICAgICBAdXBkYXRlZEF0DQogICAgdXNlcklkICAgICAgSW50Pw0KICAgIFVzZXIgICAgICAgIFVzZXI/ICAgICAgICAgICBAcmVsYXRpb24oZmllbGRzOiBbdXNlcklkXSwgcmVmZXJlbmNlczogW2lkXSwgb25EZWxldGU6IENhc2NhZGUpDQogICAgZ2VucmUgICAgICAgR2VucmVPbk1vdmllc1tdDQp9DQoNCm1vZGVsIEdlbnJlIHsNCiAgICBpZCAgICAgICAgSW50ICAgICAgICAgICAgIEBpZCBAZGVmYXVsdChhdXRvaW5jcmVtZW50KCkpDQogICAgbmFtZSAgICAgIFN0cmluZw0KICAgIGNyZWF0ZWRBdCBEYXRlVGltZSAgICAgICAgQGRlZmF1bHQobm93KCkpDQogICAgdXBkYXRlZEF0IERhdGVUaW1lICAgICAgICBAdXBkYXRlZEF0DQogICAgbW92aWVzICAgIEdlbnJlT25Nb3ZpZXNbXQ0KfQ0KDQptb2RlbCBHZW5yZU9uTW92aWVzIHsNCiAgICBpZCAgICAgIEludCAgICAgQGlkIEBkZWZhdWx0KGF1dG9pbmNyZW1lbnQoKSkNCiAgICBtb3ZpZSAgIE1vdmllcz8gQHJlbGF0aW9uKGZpZWxkczogW21vdmllSWRdLCByZWZlcmVuY2VzOiBbaWRdKQ0KICAgIG1vdmllSWQgSW50Pw0KICAgIGdlbnJlICAgR2VucmU/ICBAcmVsYXRpb24oZmllbGRzOiBbZ2VucmVJZF0sIHJlZmVyZW5jZXM6IFtpZF0pDQogICAgZ2VucmVJZCBJbnQ/DQp9DQo=",
-  "inlineSchemaHash": "e654068b7178aa3797cc4aa7a0c3551e14a0608b96ae07b79403690ab9d3ca48"
+  "inlineSchemaHash": "e654068b7178aa3797cc4aa7a0c3551e14a0608b96ae07b79403690ab9d3ca48",
+  "noEngine": false
 }
 
 const fs = require('fs')
