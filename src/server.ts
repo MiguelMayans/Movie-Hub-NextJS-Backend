@@ -11,8 +11,8 @@ import { Request, Response } from "express";
 
 const app = express();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 app.use(helmet());
 app.use(morgan("tiny"));
 
