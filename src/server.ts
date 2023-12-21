@@ -4,7 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import moviesRoutes from "./routes/movie.routes";
 import genreRoutes from "./routes/genre.routes";
-import { checkJwtMiddleware } from "./middleware/checkJwt.middleware";
+// import { checkJwtMiddleware } from "./middleware/checkJwt.middleware";
 import errorHandler from "./middleware/error.middleware";
 import cors from "cors";
 import { Request, Response } from "express";
