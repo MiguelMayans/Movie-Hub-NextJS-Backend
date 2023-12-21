@@ -8,6 +8,9 @@ import genreRoutes from "./routes/genre.routes";
 import errorHandler from "./middleware/error.middleware";
 import cors from "cors";
 import { Request, Response } from "express";
+import { PrismaClient } from "@prisma/client";
+
+export const prisma = new PrismaClient();
 
 const app = express();
 
