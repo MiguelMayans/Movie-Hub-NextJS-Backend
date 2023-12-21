@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("tiny"));
 
-app.use("/user", userRoutes);
+app.use("/api", userRoutes);
 app.use("/movies", moviesRoutes);
 app.use("/genre", genreRoutes);
 
