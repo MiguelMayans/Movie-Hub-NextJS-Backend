@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Movies" ALTER COLUMN "score" SET DATA TYPE TEXT;
