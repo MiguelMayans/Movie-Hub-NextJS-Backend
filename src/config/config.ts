@@ -6,7 +6,7 @@ type TConfig = {
 
 type EnviromentConfig = {
   app: AppConfig;
-  db?: MongoDBConfig;
+  db: MongoDBConfig;
   auth0?: AUTH0;
 };
 
@@ -16,7 +16,6 @@ type MongoDBConfig = {
 
 type AppConfig = {
   PORT: string | number;
-  ORIGIN: string | undefined;
 };
 
 type AUTH0 = {
@@ -37,7 +36,11 @@ const CONFIG: TConfig = {
   development: {
     app: {
       PORT: process.env.PORT || 4001,
-      ORIGIN: process.env.APP_ORIGIN,
+    },
+    db: {
+      URI:
+        process.env.MONGO_DB_URI ||
+        "mongodb://localhost:27017/test_development",
     },
     auth0: {
       client_origin: process.env.APP_ORIGIN,
@@ -47,13 +50,11 @@ const CONFIG: TConfig = {
   },
   production: {
     app: {
-      PORT: process.env.PORT || 4001,
-      ORIGIN: process.env.APP_ORIGIN,
+      PORT: process.env.PORT || 4002,
     },
-    auth0: {
-      client_origin: process.env.APP_ORIGIN,
-      audience: process.env.AUTH0_AUDIENCE,
-      issuer: process.env.AUTH0_ISSUER,
+    db: {
+      URI:
+        process.env.MONGO_DB_URI || "mongodb://localhost:27017/test_production",
     },
   },
 };
